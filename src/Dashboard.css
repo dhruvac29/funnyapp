@@ -1,0 +1,28 @@
+.dashboard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+}
+.dashboard__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    background-color: #dcdcdc;
+    padding: 30px;
+}
+.dashboard__btn {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.dashboard div {
+    margin-top: 7px;
+}
