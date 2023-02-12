@@ -29,7 +29,7 @@ function App() {
                     <Route exact path="/notification" element={<Notify/>}/>
                     <Route exact path="/photo" element={<Photo/>}/>
                     <Route exact path="/text" element={<entertext/>}/>
-                    <Route exact path="/text" element={<Calculator/>}/>
+                    <Route exact path="/calculator" element={<Calculator/>}/>
                     <Route exact path="/logout" element={<Logout/>}/>
                 </Routes>
 
