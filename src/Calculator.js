@@ -20,7 +20,7 @@ const Calculator = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch(`http://localhost:4000/${operator}/${num1}/${num2}`);
+        const response = await fetch(`https://calculatorapi.vercel.app/${operator}/${num1}/${num2}`);
         const data = await response.json();
         setResult(data.result);
     };
