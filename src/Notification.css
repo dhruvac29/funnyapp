@@ -1,0 +1,40 @@
+button.notification-button {
+    position: center;
+    border: none;
+    background: linear-gradient(45deg, #d32f2f, #f44336, #d32f2f);
+    color: white;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #bfbfbf;
+    transform: translate(0, 0);
+    transition: all 0.1s ease-in-out;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+button.notification-button:hover {
+    background: linear-gradient(45deg, #ff5722, #ff7043, #ff5722);
+    box-shadow: none;
+    transform: translate(2px, 2px) rotateX(-5deg) rotateY(5deg);
+}
+
+button.notification-button:focus {
+    outline: none;
+}
+
+button.notification-button::after {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 0.8em;
+    color: red;
+}

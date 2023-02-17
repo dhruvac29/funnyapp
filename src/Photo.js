@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { storage, db } from "./firebase";
 import "./App.css";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import {Input,Button,Image} from 'antd';
 
 const Photo =()=> {
     const [image, setImage] = useState(null);
@@ -120,15 +121,14 @@ setImage(file)
 
     return (
         <div >
-            <button onClick={captureImage}>Use Camera</button>
+            <Button onClick={captureImage}>Use Camera</Button>
             <br />
-            <input type="file" onChange={captureFile} />
-            <button onClick={captureImage}>Use Camera</button>
-            <button onClick={uploadFile}>up</button>
+            <Input type="file" onChange={captureFile} />
+            <Button onClick={uploadFile}>Upload</Button>
             <br />
             <progress value={progress} max="100" />
             <br />
-            <img src={url || "http://via.placeholder.com/400x300"} alt="Uploaded Images" height="300" width="400" />
+            <Image src={url || "http://via.placeholder.com/500x500"} alt="Uploaded Images" height="500" width="500" />
         </div>
     );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {button} from "./Notification.css"
 
 const Notify = () => {
 
@@ -23,12 +24,7 @@ const Notify = () => {
     return (
         <div style={{ textAlign: "center" }}>
             <button
-                style={{
-                    backgroundColor: "red",
-                    color: "white",
-                    padding: "1em 2em",
-                    fontSize: "2em"
-                }}
+                className="notification-button"
                 onClick={handleButtonClick}
             >
                 Big Red Button
